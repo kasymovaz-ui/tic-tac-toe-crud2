@@ -1,0 +1,16 @@
+body {
+  background-color: #f8f9fa;
+}
+.card {
+  max-width: 500px;
+  margin: auto;
+}
+.board {
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 300px;
+  margin: auto;
+}
+.cell {
+  height: 80px;
+  font-size: 2rem;
+}

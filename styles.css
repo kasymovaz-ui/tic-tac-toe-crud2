@@ -1,16 +1,123 @@
-body {
-  background-color: #f8f9fa;
+/* Custom styles for Tic-Tac-Toe game in pastel colors with Bootstrap */
+.bg-pastel {
+    background: linear-gradient(135deg, #f3e7e9, #d4e4f7, #e6f0fa);
 }
+
+.text-lavender {
+    color: #5a4a78;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
 .card {
-  max-width: 500px;
-  margin: auto;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
 }
-.board {
-  grid-template-columns: repeat(3, 1fr);
-  max-width: 300px;
-  margin: auto;
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
 }
+
+.board-grid {
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+    width: 246px;
+}
+
 .cell {
-  height: 80px;
-  font-size: 2rem;
+    background: #f8e1e9;
+    height: 80px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background: #f1d4e0;
+    transform: scale(1.05);
+}
+
+.cell:active {
+    transform: scale(0.95);
+}
+
+.btn-mint {
+    background-color: #b8d8d8;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-mint:hover {
+    background-color: #a0c4c4;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-coral {
+    background-color: #d4a5a5;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-coral:hover {
+    background-color: #c89090;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    border: 2px solid #e2d6e8;
+    border-radius: 0.5rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #a8b5e1;
+    box-shadow: 0 0 0 3px rgba(168, 181, 225, 0.2);
+}
+
+.list-group-item {
+    background: #f9f0f5;
+    border: none;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+    background: #f1e6ef;
+    transform: translateX(4px);
+}
+
+.list-group-item.scoreboard-item {
+    background: #e6f0fa;
+}
+
+.list-group-item.scoreboard-item:hover {
+    background: #d9e6f5;
+}
+
+.edit-player {
+    color: #7a9cc6;
+    transition: all 0.3s ease;
+}
+
+.edit-player:hover {
+    color: #5a7ca6;
+    transform: scale(1.1);
+    text-decoration: none;
+}
+
+.delete-player {
+    color: #d4a5a5;
+    transition: all 0.3s ease;
+}
+
+.delete-player:hover {
+    color: #b58585;
+    transform: scale(1.1);
+    text-decoration: none;
 }
